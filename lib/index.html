@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <div id="main">
+
+        <!-- Navigation bar & Intro Section -->
+        <div class="navigation-bar">
+            <nav>
+                <img src="../assets/logo.jpg" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="ri-close-fill remix" onclick="closemenu()"></i>
+                </ul>
+                <i class="ri-menu-line  remix" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div class="col-one">
+                    <p>Flutter Developer</p>
+                    <h1>Hi, I'am <span>Dhiraj</span><br> Mishra from Nepal</h1>
+                </div>
+                <div class="col-two">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player class="lottie-file" src="https://lottie.host/22f64a45-06b5-4268-8f71-0f50b10adaa1/wY0LKH8FHx.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- About Me Section -->
+        <div id="about">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="../assets/user.jpg" alt="user photo">
+                </div>
+                <div class="about-col2">
+                    <h1 class="section-title">About Me</h1>
+                    <p>I am a final-year Computer Science and Engineering student at KIIT University, passionate about coding and app development with a focus on backend solutions. With a commitment to continuous learning, I bring a blend of technical acumen and creative problem-solving to each project, aiming to craft innovative solutions and user-centric experiences.</p>
+
+                    <div class="tabs-title">
+                        <p class="tab-link active-link" onclick="opentab('skill')">Technical Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skill">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Java(preferred), C, CPP, Dart, SQL</li>
+                            <li><span>Tech Stacks</span><br> Flutter, Nodejs, MySql, MongoDb, Firebase, Postman, Git, Github</li>
+                            <li><span>Soft Skills</span><br>Time Management, Problem solving, Leadership, Team Work</li>
+                            <li><span>Coursework</span><br>Object-Oriented Programming, DBMS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Software Developer Intern | UNIIT Pvt. Ltd.</span><br>An innovative online product management app tailored for jewellery shop owners, redefining inventory and product management, order management, product sharing & more.</li>
+                            <li><span>Salesforce Developer Intern | SmartInternz</span><br>Salesforce Fundamentals, Organizational Setup, Relationship & Process Automation, Types Of Flows & Security, Apex, Testing & Debugging VS Code Setup & CLI Setup, Lightning Web Components (LWC) & API</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>Kalinga Institue of Industrial Technology</span><br>B.Tech Computer Science and Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div id="service">
+            <h1 class="section-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="ri-android-fill"></i>
+                    <h2>App Developer</h2>
+                    <p>As an experienced app developer with two years of expertise in Flutter, I have successfully crafted and delivered numerous applications, showcasing a strong command over mobile development. My passion for creating robust and user-friendly apps is reflected in my commitment to delivering high-quality solutions tailored to meet diverse client needs.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="ri-code-s-slash-fill"></i>
+                    <h2>Web Developer</h2>
+                    <p>With a solid year of experience in web development, I have honed my skills in HTML, CSS, and JavaScript, successfully crafting and deploying a variety of dynamic and user-friendly web applications. My dedication to creating efficient and visually appealing solutions reflects my passion for delivering high-quality web experiences.</p>
+                    <a href="#">learn more</a>
+                </div>
+
+                <div>
+                    <i class="ri-crop-line"></i>
+                    <h2>Backend Developer</h2>
+                    <p>As a backend developer with one year of hands-on experience in Node.js, MongoDB, and Express, I have spearheaded the development of robust and scalable backend solutions. My expertise includes crafting efficient server-side logic and database management, contributing to the successful implementation of various backend projects.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- portfolio section -->
+        <div id="portfolio">
+            <h1 class="section-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../assets/jugaad-junction.jpg" alt="jugaad-junction">
+                    <div class="layer">
+                        <h3>Jugaad-Junction</h3>
+                        <p>A fully functional e-commerce app with an admin panel</p>
+                        <a href="#"><i class="ri-code-s-slash-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="../assets/chatify.png" alt="work1">
+                    <div class="layer">
+                        <h3>Chatify</h3>
+                        <p>A Full Stack One-One/Group Chat app</p>
+                        <a href="#"><i class="ri-code-s-slash-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="../assets/bmi.png" alt="work1">
+                    <div class="layer">
+                        <h3>BMI Calculator</h3>
+                        <p>A Simple BMI Calculator to keep your health tracking</p>
+                        <a href="#"><i class="ri-code-s-slash-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+        <!-- Contact Section -->
+
+        <div id="contact">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="section-title">Contact Me</h1>
+                    <p><i class="ri-mail-line"></i> gobindmishra23@gmail.com</p>
+                    <p><i class="ri-phone-fill"></i> +918093859095</p>
+                    <div class="social-icons">
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-instagram-fill"></i></a>
+                        <a href=""><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                    <a href="../assets/Resume - Dhiraj Kumar Mishra.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <footer class="copyright">
+            <p>Copyright <i class="ri-copyright-line"></i> Dhiraj. Made with <i class="ri-heart-3-fill"></i> by Dhiraj
+                Mishra</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
