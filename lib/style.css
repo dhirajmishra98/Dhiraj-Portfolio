@@ -24,7 +24,7 @@ html, body{
 /* Intro Section CSS */
 
 .navigation-bar{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     padding: 10px 10%;
 }
@@ -84,6 +84,66 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
+
+.uiverse_button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ff004f;
+    background-color: #ff004a;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .uiverse_button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .uiverse_button .button__text {
+    transform: translateX(22px);
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .uiverse_button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #ff004a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .uiverse_button .svg {
+    width: 20px;
+    fill: #fff;
+  }
+  
+  .uiverse_button:hover {
+    background: #ff004a;
+  }
+  
+  .uiverse_button:hover .button__text {
+    color: transparent;
+  }
+  
+  .uiverse_button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .uiverse_button:active .button__icon {
+    background-color: #ff004a;
+  }
+  
+  .uiverse_button:active {
+    border: 1px solid #ff004a;
+  }
 
 /* About Section CSS */
 
@@ -281,22 +341,10 @@ nav ul li a:hover::after{
 }
 
 .layer h3{
+    margin: 10px;
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 30px;
-}
-
-.layer a{
-    margin-top: 20px;
-    color: #ff004f;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
 }
 
 .work:hover img{
@@ -323,6 +371,51 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
+.work-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.uiverse_button_portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .uiverse_button_portfolio .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+  }
+  
+  .uiverse_button_portfolio svg path {
+    transition: 400ms;
+  }
+  
+  .uiverse_button_portfolio:hover {
+    background-color: transparent;
+  }
+  
+  .uiverse_button_portfolio:hover .text {
+    color: #181717;
+  }
+  
+  .uiverse_button_portfolio:hover svg path {
+    fill: #181717;
+  }
 
 /* contact section */
 #contact{
@@ -464,12 +557,41 @@ nav .remix{
         margin-top: 30px;
     }
     .about-col2{
-        font-size: 40px;
+        font-size: 20px;
+        margin: 40px;
+    }
+
+    #skill span{
+        font-size: 25px;
     }
     .tab-link{
         font-size: 16px;
         margin-right: 20px;
     }
+
+    .work-list {
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+        column-gap: 20px;
+        row-gap: 20px;
+        height: auto;
+    }
+    .work {
+        border-radius: 8px;
+    }
+
+    .work img {
+        border-radius: 8px;
+    }
+
+    .layer {
+        border-radius: 8px;
+        padding: 0px 10px;
+    }
+
+    .btn {
+        padding: 12px 40px;
+    }
+
     .contact-left, .contact-right{
         flex-basis:100% ;
     }
