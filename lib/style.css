@@ -12,6 +12,15 @@ html, body{
     color: white;
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    width: 5px;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff004f; 
+    border-radius: 20px;
+}
 
 #main{
     height: 100vh;
@@ -505,6 +514,16 @@ nav .remix{
     display: none;
 }
 @media only screen and (max-width: 600px) {
+    ::-webkit-scrollbar {
+        width: 5px;
+        background: black;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #ff004f; 
+        border-radius: 20px;
+    }
+    
     .header-text{
         /* margin-top: 100%; */
         font-size: 16px;
@@ -598,6 +617,7 @@ nav .remix{
     .copyright{
         font-size: 14px;
     }
+
   }
 
   #msg{
